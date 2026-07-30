@@ -1,41 +1,46 @@
 import { ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+import nebulogyPhoto from "@/assets/projects/Nebulogy.png";
+import texterPhoto from "@/assets/projects/Texter.png";
+import chatmaniaPhoto from "@/assets/projects/Chatmania.png";
+import joblincPhoto from "@/assets/projects/JobLinc.png";
+import fitpulsePhoto from "@/assets/projects/FitPulse.png";
 
 const projects = [
     {
         title: "Nebulogy",
         description: "It's a built in 48 hours dashboard, a LangGraph summarization pipeline generating 3 persona-specific outputs across 600 NASA papers, with semantic search (>70% relevance) and a knowledge graph surfacing research gaps. ",
         stack: ["Python", "FastAPI", "React.js", "LangGraph", "GroqAPI", "Supabase", "LLMs", "Vercel", "HuggingFace", "Git"],
-        image: "/projects/Nebulogy.png",
+        image: nebulogyPhoto,
         github: "https://github.com/QuantumHayder/Space-Biology-Knowledge-Engine"
     },
     {
         title: "Texter",
         description: "A real-time multi-user text editor with custom CRDT tree logic, undo/redo, WebSocket sync, and permission-based access, and an upload/download module",
         stack: ["Java", "Spring Boot", "JavaFX", "STOMP over WebSocket", "H2 Database", "CRDT", "Postman", "Git"],
-        image: "/projects/Texter.png",
+        image: texterPhoto,
         github: "https://github.com/QuantumHayder/Texter"
     },
     {
         title: "Chatmania",
         description:" A  full-stack production-ready document-aware chatbot using LangChain. It included PDF/Word/text ingestion and context-aware responses stored in PostgreSQL chat history and used interchangeable chunking methods. It also scaled to 20+ documents via similarity search",
         stack: ["Python", "FastAPI", "LangChain", "OpenAI", "Ollama", "Qwen/LM Studio", "Streamlit", "PostgreSQL", "PgVector", "Git"],
-        image: "/projects/Chatmania.png",
+        image: chatmaniaPhoto,
         github: "https://github.com/QuantumHayder/Langchain-Chatbot"
     },
     {
         title: "JobLinc",
         description: "A LinkedIn clone, where I built backend modules for user profiles, Stripe payment integration (one-time & recurring), and an admin panel with 9 analytics metrics in a 19-member team following MVC and SOLID principles",
         stack: ["TypeScript", "Node.js", "Express.js", "MongoDB", "Stripe API", "RESTful APIs", "Mocha", "Git"],
-        image: "/projects/JobLinc.png",
+        image: joblincPhoto,
         github: "https://github.com/JobLinc"
     },
     {
         title: "FitPulse",
         description: "A fitness web-application platform, that is considered a next-generation, as it does not only provide user with +500 exercises and +650 food options, but also allows the user to make connections with other athletes, join class, and obtain personalized plan all virtually through one platform, and the user is awarded points to attend free classes based on achievements unlocked.",
         stack: ["Python", "Flask", "HTMX", "TailwindCss", "Jinja templates", "Postgresql", "Git"],
-        image: "/projects/FitPulse.png",
+        image: fitpulsePhoto,
         github: "https://github.com/QuantumHayder/FitPulse---Flask"
     }
 ]

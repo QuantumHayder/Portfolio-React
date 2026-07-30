@@ -2,6 +2,8 @@ import { Star, ArrowRight, Download, ChevronDown} from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa"; 
 import { Button } from "../components/Button";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import hayderPhoto from "@/assets/Hayder-Gemini.jpeg";
+import bluePhoto from "@/assets/Blue-gradient-bg.jpg";
 
 const skills = [
     "Backend Development",
@@ -24,7 +26,7 @@ export const Hero = () => {
         {/* Bg */}
         <div className="absolute inset-0">
             <img 
-                src="/Blue-gradient-bg.jpg"
+                src={bluePhoto}
                 alt="Hero Image"
                 className="w-full h-full object-cover opacity-40"
                 />
@@ -118,7 +120,7 @@ export const Hero = () => {
                     />
                     <div className="relative glass rounded-3xl p-2 glow-border">
                         <img 
-                            src="/Hayder-Gemini.jpeg" 
+                            src={hayderPhoto} 
                             alt="Abdelrahman Hayder" 
                             className="w-full aspect-[4/5] object-cover rounded-2xl"
                         />
