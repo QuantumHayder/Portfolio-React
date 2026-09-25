@@ -1,6 +1,11 @@
-export const AnimatedBorderButton = ({ children }) => {
+export const AnimatedBorderButton = ({ children, href, download, ...props }) => {
+  const Component = href ? "a" : "button";
+
   return (
-    <button
+    <Component
+      href={href}
+      download={download}
+      {...props}
       className="relative bg-transparent border border-border 
         text-foreground hover:border-primary/50 transition-all 
         duration-1000 focus:outline-none focus-visible:ring-2 
@@ -31,6 +36,6 @@ export const AnimatedBorderButton = ({ children }) => {
       <span className="relative z-10 flex items-center justify-center gap-2">
         {children}
       </span>
-    </button>
+    </Component>
   );
 };
